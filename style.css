@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #281936;
+    width: 100%;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    background: url('sterrenhemel3.webp') no-repeat center center/cover;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: "Doto", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 2vw;
+    background: rgba(0, 0, 0, 0.6);
+    background: url('sterrenhemel3.webp') repeat, rgba(0, 0, 0, 0.6);
+    background-size: cover; 
+    border-radius: 10px;
+    max-width: 1200px; 
+    width: 90vw;
+    margin: 25px auto;
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.4); 
+}
+
+.socials {
+    margin-bottom: 50px;
+}
+
+#abt-me {
+    width: 40%;
+    margin: 120px auto;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: white;
+    font-family: "Doto", serif;
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#about-me {
+    color: #a56be1;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    font-family: "Doto", sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    background: #c084fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #a56be1;
+}
+
+footer {
+    background: url('sterrenhemel3.webp') no-repeat center center/cover; 
+    margin-top: 10px auto;
+    padding: 2vh 0;
+    text-align: center;
+    font-family: "Doto", serif;
+    font-weight: bold;
+    height: 8vh;
+    min-height: 50px;
+    
+}
+
+#copy {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) { /* Voor tablets */
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        width: 95vw;
+    }
+
+    #abt-me {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 480px) { /* Voor telefoons */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    #abt-me {
+        width: 90vw;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
